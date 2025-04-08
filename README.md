@@ -27,26 +27,36 @@ This repository provides a **Streamlit-based web application** that detects **of
 
 ---
 
+
 ## 🚀 Installation & Setup
 
 ### 1️⃣ Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/offensive-comment-detector.git
 cd offensive-comment-detector
+```
 
-
+---
 
 ### 2️⃣ Create Virtual Environment & Install Dependencies
+
 ```bash
 python -m venv venv
-# Windows
+
+# For Windows
 venv\Scripts\activate
-# macOS/Linux
+
+# For macOS/Linux
 source venv/bin/activate
 
 pip install -r requirements.txt
+```
 
+---
 
 ### 3️⃣ Launch the Streamlit App
+
 ```bash
-streamlit run app.py
+streamlit run main.py
+```
