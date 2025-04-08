@@ -1,7 +1,7 @@
 # 🛡️ Offensive Comment Detector (LLM-Powered)
 
 🔗 **[Live Demo](https://offensive-comment-detector-fksppamv69m6vmfmjggwgw.streamlit.app/)** — Try the app instantly in your browser!
-
+https://offensive-comment-detector-fksppamv69m6vmfmjggwgw.streamlit.app/
 ---
 
 ## 📌 Overview
