@@ -1,0 +1,51 @@
+comment_id,username,comment_text,is_offensive,offense_type,explanation
+1,user01,You're amazing at this!,False,,No offense detected
+2,user02,I hope your day is great :),False,,No offense detected
+3,user03,Why would anyone watch this crap?,True,"toxicity, profanity",toxic (0.96); obscene (0.85)
+4,user04,Get lost loser.,True,"toxicity, harassment",toxic (0.94); insult (0.69)
+5,user05,Such a helpful tutorial thank you!,False,,No offense detected
+6,user06,This is the worst video ever.,True,toxicity,toxic (0.67)
+7,user07,You suck.,True,"toxicity, profanity, harassment",toxic (1.00); obscene (0.97); insult (0.96)
+8,user08,Can't wait for your next post!,False,,No offense detected
+9,user09,Who even listens to you?,False,,No offense detected
+10,user10,Well done 👏👏,False,,No offense detected
+11,user11,You’re trash.,True,"toxicity, profanity, harassment",toxic (0.98); insult (0.91); obscene (0.54)
+12,user12,This made me smile today.,False,,No offense detected
+13,user13,Absolutely horrible content.,False,,No offense detected
+14,user14,Great job!,False,,No offense detected
+15,user15,Your voice is annoying.,False,,No offense detected
+16,user16,Wow this helped me so much!,False,,No offense detected
+17,user17,Stop posting this garbage.,True,toxicity,toxic (0.92)
+18,user18,Such a chill vibe here.,False,,No offense detected
+19,user19,You have no clue what you're doing.,False,,No offense detected
+20,user20,Loved the energy in this.,False,,No offense detected
+21,user21,Just shut up already.,True,toxicity,toxic (0.90)
+22,user22,Much needed advice thanks!,False,,No offense detected
+23,user23,This is complete nonsense.,False,,No offense detected
+24,user24,Can’t stop watching this!,False,,No offense detected
+25,user25,Do you even know how to speak?,False,,No offense detected
+26,user26,Very informative thanks a lot.,False,,No offense detected
+27,user27,You’re a disgrace.,True,"toxicity, harassment",toxic (0.97); insult (0.89)
+28,user28,That was smooth editing!,False,,No offense detected
+29,user29,No one cares what you think.,False,,No offense detected
+30,user30,Wholesome content I like it.,False,,No offense detected
+31,user31,Pathetic effort.,True,toxicity,toxic (0.55)
+32,user32,Beautiful message.,False,,No offense detected
+33,user33,You're so dumb it's painful.,True,"toxicity, harassment",toxic (0.97); insult (0.92)
+34,user34,This really opened my eyes.,False,,No offense detected
+35,user35,Annoying af.,False,,No offense detected
+36,user36,I learned a lot from this video.,False,,No offense detected
+37,user37,Why are you even here?,False,,No offense detected
+38,user38,Awesome energy and great delivery!,False,,No offense detected
+39,user39,I hate this so much.,False,,No offense detected
+40,user40,Good luck with everything!,False,,No offense detected
+41,user41,Your face is punchable.,True,toxicity,toxic (0.87)
+42,user42,Nailed it!,False,,No offense detected
+43,user43,You sound drunk.,True,"toxicity, harassment",toxic (0.89); insult (0.53)
+44,user44,Big fan of your work!,False,,No offense detected
+45,user45,This is cringe.,False,,No offense detected
+46,user46,Keep shining!,False,,No offense detected
+47,user47,Idiot alert.,True,"toxicity, profanity, harassment",toxic (0.97); insult (0.89); obscene (0.70)
+48,user48,Thanks for breaking it down so well.,False,,No offense detected
+49,user49,What a load of garbage.,True,toxicity,toxic (0.95)
+50,user50,So proud of you!,False,,No offense detected
