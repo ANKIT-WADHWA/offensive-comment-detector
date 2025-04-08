@@ -1,6 +1,10 @@
-🔗 **[Live Demo](https://offensive-comment-detector-fksppamv69m6vmfmjggwgw.streamlit.app/)** — Try the app instantly in your browser:  
-`https://offensive-comment-detector-fksppamv69m6vmfmjggwgw.streamlit.app/`
-----
+# 🛡️ Offensive Comment Detector (LLM-Powered)
+
+🔗 **[Live Demo](https://offensive-comment-detector-fksppamv69m6vmfmjggwgw.streamlit.app/)** — 🚀 **Click here to test the app instantly in your browser**  
+🌐 `https://offensive-comment-detector-fksppamv69m6vmfmjggwgw.streamlit.app/`
+
+---
+
 ## 📌 Overview
 
 This repository provides a **Streamlit-based web application** that detects **offensive, toxic, or hateful comments** using a **BERT-based LLM classifier**. Upload a CSV file or try sample data to analyze text for various types of harmful language and receive insights with visualizations.
