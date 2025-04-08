@@ -1,7 +1,7 @@
 # 🛡️ Offensive Comment Detector (LLM-Powered)
 
-🔗 **[Live Demo](https://offensive-comment-detector-fksppamv69m6vmfmjggwgw.streamlit.app/)** — 🚀 **Click here to test the app instantly in your browser**  
-🌐 `https://offensive-comment-detector-fksppamv69m6vmfmjggwgw.streamlit.app/`
+🔗 **[Live Demo](https://offensive-comment-detector-eevkxsnrpibk6qxufebdkt.streamlit.app/)** — 🚀 **Click here to test the app instantly in your browser**  
+🌐 `https://offensive-comment-detector-eevkxsnrpibk6qxufebdkt.streamlit.app/`
 
 ---
 
@@ -65,3 +65,41 @@ pip install -r requirements.txt
 ```bash
 streamlit run main.py
 ```
+
+---
+## 📷 Screenshots
+
+### 1️⃣ Open the Streamlit App from CLI  
+[🔗 Streamlit Link](https://offensive-comment-detector-eevkxsnrpibk6qxufebdkt.streamlit.app/)  
+Launch the app and either upload your own file or use the sample data.  
+Click on **Use Sample Data**.
+
+![Open App](images_output/1.png)
+
+---
+
+### 2️⃣ Preview of Sample Data  
+Once the data is loaded, you can preview the first few rows.
+
+![Data Preview](images_output/2.png)
+
+---
+
+### 3️⃣ Click "🚀 Analyze Comments"  
+After previewing the data, click on the **Analyze Comments** button and wait for the model to process.
+
+![Analyze](images_output/3.png)
+
+---
+
+### 4️⃣ Analysis Output  
+The app will display annotated comments along with offense type and explanations.
+
+![Output](images_output/4.png)
+
+---
+
+### 5️⃣ Pie Chart Visualization  
+A pie chart visualizes the distribution of different offense types in the analyzed data.
+
+![Pie Chart](images_output/5.png)
