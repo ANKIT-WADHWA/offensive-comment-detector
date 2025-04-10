@@ -1,7 +1,7 @@
 # 🛡️ Offensive Comment Detector (LLM-Powered)
 
-🔗 **[Live Demo](https://offensive-comment-detector-eevkxsnrpibk6qxufebdkt.streamlit.app/)** — 🚀 **Click here to test the app instantly in your browser**  
-🌐 `https://offensive-comment-detector-eevkxsnrpibk6qxufebdkt.streamlit.app/`
+🔗 **[Live Demo](https://offensive-comment-detector-y3zunnbx6hop2btvvnjvnx.streamlit.app/)** — 🚀 **Click here to test the app instantly in your browser**  
+🌐 `https://offensive-comment-detector-y3zunnbx6hop2btvvnjvnx.streamlit.app/`
 
 ---
 
@@ -70,7 +70,7 @@ streamlit run main.py
 ## 📷 Screenshots
 
 ### 1️⃣ Open the Streamlit App from CLI  
-[🔗 Streamlit Link](https://offensive-comment-detector-eevkxsnrpibk6qxufebdkt.streamlit.app/)  
+[🔗 Streamlit Link](https://offensive-comment-detector-y3zunnbx6hop2btvvnjvnx.streamlit.app/)  
 Launch the app and either upload your own file or use the sample data.  
 Click on **Use Sample Data**.
 
