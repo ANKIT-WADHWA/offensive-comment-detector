@@ -7,17 +7,24 @@ from io import BytesIO
 # Page config
 st.set_page_config(page_title="Offensive Comment Detector", layout="centered")
 
-# Load pre-trained model
-classifier = pipeline("text-classification", model="unitary/toxic-bert", top_k=None)
+# Load model with fallback
+try:
+    classifier = pipeline("text-classification", model="unitary/toxic-bert", top_k=None)
+    model_type = "toxic-bert"
+except Exception as e:
+    st.warning("⚠️ Failed to load 'unitary/toxic-bert'. Switching to fallback model.")
+    classifier = pipeline("text-classification", model="martin-ha/toxic-comment-model", return_all_scores=True)
+    model_type = "fallback"
 
-# Mapping and thresholds
+# Label mappings and thresholds
 label_mapping = {
     'toxic': 'toxicity',
     'severe_toxic': 'toxicity',
     'insult': 'harassment',
     'obscene': 'profanity',
     'identity_hate': 'hate speech',
-    'threat': 'harassment'
+    'threat': 'harassment',
+    'non-toxic': None
 }
 
 custom_thresholds = {
@@ -26,18 +33,24 @@ custom_thresholds = {
     'insult': 0.5,
     'toxic': 0.5,
     'severe_toxic': 0.5,
-    'obscene': 0.5
+    'obscene': 0.5,
+    'non-toxic': 1.0  # ignored
 }
 
 # Detection logic
 def detect_offense_pipeline(comment):
     results = classifier(comment)
-    toxic_scores = {res['label'].lower(): res['score'] for res in results[0]}
+
+    if model_type == "toxic-bert":
+        toxic_scores = {res['label'].lower(): res['score'] for res in results[0]}
+    else:  # fallback model
+        toxic_scores = {res['label'].lower(): res['score'] for res in results[0]}
+
     toxic_labels = [
         label for label, score in toxic_scores.items()
         if score > custom_thresholds.get(label, 0.5)
     ]
-    offense_types = list({label_mapping[label] for label in toxic_labels if label in label_mapping})
+    offense_types = list({label_mapping[label] for label in toxic_labels if label in label_mapping and label_mapping[label]})
     is_offensive = len(offense_types) > 0
     explanation = "; ".join([f"{label} ({toxic_scores[label]:.2f})" for label in toxic_labels if label in label_mapping])
     return is_offensive, ", ".join(offense_types) if is_offensive else None, explanation if is_offensive else "No offense detected"
